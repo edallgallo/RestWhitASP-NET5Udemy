@@ -33,12 +33,14 @@ namespace RestWhitASPNETUdemy.Controllers
         private bool IsNumeric(string strNumber)
         {
             double number;
+
+            double number2;
             
             bool IsNumber = double.TryParse(
                 strNumber,
                 System.Globalization.NumberStyles.Any,
                 System.Globalization.NumberFormatInfo.InvariantInfo,
-                out number);
+                out number );
             return IsNumber;
         }
 
